@@ -14,7 +14,7 @@ I hope this will help you
 
 - Rufus
 
-## Burn the image on the sd card
+## Burn the image on the sd card with Rufus 
 
 I used image from https://github.com/ophub/amlogic-s9xxx-armbian
 
