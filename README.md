@@ -24,13 +24,13 @@ You can choose ubuntu or debian based image,
 I choosed debian based, and i pick the image for s905x3 (the cpu of Vontar-x3).
 So i picked this image : Armbian_24.11.0_amlogic_s905x3_bookworm_6.6.62_server_2024.11.20.img.gz
 
-## Prepare the boot on sd card
+## Prepare the boot files on sd card
 
 ### u-boot
 
-Depending on your cpu you need to set the u-boot.ext
+Depending on your cpu you need to set the u-boot.ext file
 
-Find your corresponding files [here](https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/build-armbian/armbian-files/common-files/etc/model_database.conf)
+If you don't have a vontar x3, find your corresponding files [here](https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/build-armbian/armbian-files/common-files/etc/model_database.conf)
 
 For Vontar x3, you have a s905x3, and you need u-boot-s905x2-s922 or u-boot-s905x3 
 
