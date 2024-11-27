@@ -54,18 +54,19 @@ Do the same in uEnv.txt (i am not sure of this, but just in case)
 ## Boot on the sd card 
 
 - Unplug your vontar x3
+- Plug a screen with HDMI cable, to see what is going on
 - Insert the SD card
 - Use the toothpick to press the reset button, it should be inside the audio jack port
-- Hold the button while you plug the jack 
+- Hold the button while you plug the power 
 
-If this is not the correct dtb file, it will be stuck at "starting linux kernel". So try another one 
+If this is not the correct dtb file, it will be stuck at "starting linux kernel". So try another one.
 
-Then linux will start to boot on the sd card
+Then linux will start to boot on the sd card. You can plug an ethernet cable, and ssh to it (user : root, password: 1234, port: 22)
 
 ## Install on eMMC
 
 You can install on the eMMC (inside memory) to have faster disk speed.
-But be careful, it may brick your device !
+But be careful, it may brick your device, and you will lose access to the android firmware. 
 
 Run : 
 
@@ -77,3 +78,5 @@ Enjoy your cheap linux server now !
 ## Performance benchmark
 
 (todo)
+
+
