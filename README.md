@@ -34,7 +34,7 @@ If you don't have a vontar x3, find your corresponding files [here](https://gith
 
 For Vontar x3, you have a s905x3, and you need u-boot-s905x2-s922 or u-boot-s905x3 
 
-Rename u-boot-s905x2-s922.bin to u-boot.ext 
+    cp u-boot-s905x2-s922.bin u-boot.ext 
 
 ### Device tree block 
 
