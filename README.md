@@ -1,8 +1,8 @@
-# Installing Armbian Linux on Vontar X3
+# Installing Armbian Linux on Vontar X3 (or other s905 devices)
 
 This is how i installed Armbian on vontar x3 TV box. To use it as a linux server (or mini pc).
 
-I hope it will help you 
+I hope this will help you 
 
 
 
@@ -27,13 +27,21 @@ So i picked this image : Armbian_24.11.0_amlogic_s905x3_bookworm_6.6.62_server_2
 ## Prepare the boot on sd card
 
 ### u-boot
-Depending on your cpu you need to set the u-boot.ext, for s905x3, you need u-boot-s905x2-s922 or u-boot-s905x3 
+
+Depending on your cpu you need to set the u-boot.ext
+
+Find your corresponding files [here](https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/build-armbian/armbian-files/common-files/etc/model_database.conf)
+
+For Vontar x3, you have a s905x3, and you need u-boot-s905x2-s922 or u-boot-s905x3 
 
 Rename u-boot-s905x2-s922.bin to u-boot.ext 
 
 ### Device tree block 
 
 For Vontar X3, you need this dtb file : meson-sm1-hk1box-vontar-x3.dtb.
+
+For other devices, you can again fin your corresponding files [here](https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/build-armbian/armbian-files/common-files/etc/model_database.conf).
+If your device is not listed inside, you can try one dtb file that has same CPU, RAM memory, and same ethernet speed 
 
 In extlinux dir, copy extlinux.conf.bak to extlinux.conf
 
@@ -64,3 +72,8 @@ Run :
     armbian-install -m yes -a no
 
 Enjoy your cheap linux server now ! 
+
+
+## Performance benchmark
+
+(todo)
