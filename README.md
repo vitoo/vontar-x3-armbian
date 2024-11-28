@@ -15,8 +15,8 @@ I hope this will help you
 ## What do you need
 
 - [A Vontar X3 TV box](https://s.click.aliexpress.com/e/_DEOTLuN)  (or any box having arm like S905 cpu ...) 
-Choose a 4GB RAM version !  
-- SD CARD (at least 16 GB) [i took this cheap one](https://s.click.aliexpress.com/e/_DdJnx9r) (a legit one, real size as shown)
+Choose a 2 or 4GB RAM version depending on your need  
+- SD CARD (at least 16 GB) [i took this cheap one](https://s.click.aliexpress.com/e/_DdJnx9r) (this is a legit one, real size as shown)
 - one toothpick
 - one screen and hdmi cable for installation 
 
