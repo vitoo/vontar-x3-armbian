@@ -2,7 +2,7 @@
 
  A cheaper solution than rasberry pi ! 
 
- For only 35/40$ (at the time of writing) you have a singleboard computer ! Case already included. 
+ For only 35/40$ (at the time of writing) you have a singleboard computer ! And no need to buy a case. 
 
 <img src="vontar.png" width="500"/>
 
@@ -18,6 +18,7 @@ I hope this will help you
 Choose a 4GB RAM version !  
 - SD CARD (at least 16 GB) [i took this cheap one](https://s.click.aliexpress.com/e/_DdJnx9r) (a legit one, real size as shown)
 - one toothpick
+- one screen and hdmi cable for installation 
 
 - Rufus (free software)
 
@@ -67,16 +68,18 @@ Do the same in uEnv.txt (i am not sure if it is need, but just in case)
 - Plug a screen with HDMI cable, to see what is going on
 - Insert the SD card
 - Use the toothpick to press the reset button, it should be inside the audio jack port
-- Hold the button while you plug the power 
+- Hold the button while you plug the power
+- Wait for the install to complete on the screen
 
 If this is not the correct dtb file, it will be stuck at "starting linux kernel". So try another one.
 
-Then linux will start to boot on the sd card. You can plug an ethernet cable, and ssh to it (user : root, password: 1234, port: 22)
+When linux is started, you can plug a keyboard to the box, or just an ethernet cable, and ssh to it (user : root, password: 1234, port: 22)
 
 <img src="ssh.png" width="500"/>
 
 ## Install on eMMC
 
+Now your linux system is installed on the SD card.
 You can install on the eMMC (inside memory) to have faster disk speed.
 But be careful, it may brick your device, and you will lose access to the android firmware. 
 
