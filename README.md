@@ -89,6 +89,10 @@ Run :
 
 Enjoy your cheap linux server now ! 
 
+Look at this cutie : 
+
+<img src="final.png" width="500"/>
+
 
 ## Performance benchmark
 
