@@ -1,6 +1,6 @@
 # Installing Armbian Linux on Vontar X3 TV box (or other s905 devices)
 
- A cheaper solution than rasberry pi ! 
+ A cheaper solution than Raspberry pi ! 
 
  For only 35/40$ (at the time of writing) you have a singleboard computer ! And no need to buy a case. 
 
