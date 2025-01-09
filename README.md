@@ -93,6 +93,40 @@ Look at this cutie :
 
 <img src="final.png" width="500"/>
 
+To upgrade you can do : 
+
+```bash
+ apt update
+ apt upgrade -y
+ armbian-sync
+ armbian-update
+```
+To upgrade to next release (can be dangerous, so we backup first : )
+```bash
+# 01. Backup the current system(Boot Armbian system from USB)
+armbian-ddbr
+# select: b
+
+# 02. Update existing packages and reboot the Debian 11 system
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+sudo apt-get --purge  autoremove -y
+sudo apt-get autoclean -y
+sync
+reboot
+
+# 03. Replace Debian 12 source list
+cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sed -i s'|bullseye|bookworm|'g /etc/apt/sources.list
+
+# 04. Upgrade Debian 11 to Debian 12 Bookworm
+sudo apt update
+sudo apt upgrade -y --without-new-pkgs
+sudo apt full-upgrade -y
+sync
+reboot
+```
 
 ## Performance benchmark
 
