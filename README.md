@@ -101,7 +101,7 @@ To upgrade you can do :
  armbian-sync
  armbian-update
 ```
-To upgrade to next release (can be dangerous, so we backup first : )
+To upgrade to next release (can be dangerous, so we backup first : 
 ```bash
 # 01. Backup the current system(Boot Armbian system from USB)
 armbian-ddbr
